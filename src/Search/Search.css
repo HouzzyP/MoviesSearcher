@@ -1,0 +1,27 @@
+.box-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+input {
+  width: 25vw;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid black;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-top: 0.5vw;
+}
+
+input:focus {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+input:hover {
+  border: 2px solid white;
+  border-radius: 4px;
+}
