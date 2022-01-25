@@ -1,4 +1,4 @@
-const moviesArray = [
+export const moviesArray = [
   {
     title: "The Shawshank Redemption",
     year: 1994,
@@ -2001,5 +2001,3 @@ const moviesArray = [
     score: 8,
   },
 ];
-
-module.exports = { moviesArray };

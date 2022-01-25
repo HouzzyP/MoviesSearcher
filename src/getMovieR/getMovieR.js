@@ -1,5 +1,3 @@
-import "./movies/moviesArray.js";
+import { moviesArray } from "../moviesArray";
 
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-}
+//Para conseguir una pelicula random futuro

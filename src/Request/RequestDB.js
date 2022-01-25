@@ -11,3 +11,8 @@ export const RequestDB = async (search) => {
   let data = await axios.get(URL + API_KEY + "&query=" + search);
   return data.data;
 };
+
+export const RequestDBDefault = async (name) => {
+  let data = await axios.get(URL + API_KEY + "&query=" + name);
+  return data.data;
+};

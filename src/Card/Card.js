@@ -8,7 +8,7 @@ export const Card = ({ props }) => {
       <img src={img} alt={title} />
       <div className="container">
         <h4>{title}</h4>
-        <p>{year}</p>
+        <p>Year: {year}</p>
       </div>
     </div>
   );

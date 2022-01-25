@@ -4,6 +4,7 @@ import { Search } from "../Search/Search";
 import "./App.css";
 import { Movies } from "../Movies/Movies";
 import { Footer } from "../Footer/Footer";
+import { DefaultSearch } from "../DefaultSearch/DefaultSearch";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -14,7 +15,11 @@ function App() {
         <Title />
 
         <Search props={[search, setSearch]} />
-        <Movies props={search} />
+        {search === "" ? (
+          <DefaultSearch search={search} />
+        ) : (
+          <Movies props={search} />
+        )}
       </div>
       <Footer />
     </div>
